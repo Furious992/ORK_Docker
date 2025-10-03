@@ -1,0 +1,260 @@
+{
+    "AppArmorProfile": "docker-default",
+    "Args": [
+        "nginx",
+        "-g",
+        "daemon off;"
+    ],
+    "Config": {
+        "AttachStderr": true,
+        "AttachStdin": false,
+        "AttachStdout": true,
+        "Cmd": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "Domainname": "",
+        "Entrypoint": [
+            "/docker-entrypoint.sh"
+        ],
+        "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "NGINX_VERSION=1.21.1",
+            "NJS_VERSION=0.6.1",
+            "PKG_RELEASE=1~buster"
+        ],
+        "ExposedPorts": {
+            "80/tcp": {}
+        },
+        "Hostname": "7d74136a5413",
+        "Image": "127.0.0.1:5000/custom-nginx",
+        "Labels": {
+            "com.docker.compose.config-hash": "8b9fe9ab3a7934244a4cb3d97ea83abe99d1849b88a7d7931370a021dd008c42",
+            "com.docker.compose.container-number": "1",
+            "com.docker.compose.depends_on": "",
+            "com.docker.compose.image": "sha256:b22b73864dea923a1e5808a5b62c296b3b0f5488efd32b3b15ab556a180a144e",
+            "com.docker.compose.oneoff": "False",
+            "com.docker.compose.project": "netology-nginx",
+            "com.docker.compose.project.config_files": "/data/compose/1/docker-compose.yml",
+            "com.docker.compose.project.working_dir": "/data/compose/1",
+            "com.docker.compose.service": "nginx",
+            "com.docker.compose.version": "",
+            "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+        },
+        "OnBuild": null,
+        "OpenStdin": false,
+        "StdinOnce": false,
+        "StopSignal": "SIGQUIT",
+        "Tty": false,
+        "User": "",
+        "Volumes": null,
+        "WorkingDir": ""
+    },
+    "Created": "2025-10-03T09:02:12.597008047Z",
+    "Driver": "overlay2",
+    "ExecIDs": null,
+    "GraphDriver": {
+        "Data": {
+            "LowerDir": "/var/lib/docker/overlay2/b5770e68d747114583487c0b8e32dcd695a20fe902730de49d2b3ec99f336180-init/diff:/var/lib/docker/overlay2/c1c407ef57de2461a04fccaed32f7f5b7e212769727126fb927a278c6b834c9f/diff:/var/lib/docker/overlay2/7d0deecdffb26a3a3dfe27e905ef5864b26753bd9f3e2f208a04981a219fb773/diff:/var/lib/docker/overlay2/213db3de63adf65d762cb0a0c47ac846cce3e7ea8e1569826efa3ad606a20b8a/diff:/var/lib/docker/overlay2/92f76ca4066fd0c619c0fcff76e3543e255c5b177aeaea1e8c9a1a8af74da7b5/diff:/var/lib/docker/overlay2/6736379015ea3c3541c846dd40de4689c81f7e16978a49fd53c346528fd1cb19/diff:/var/lib/docker/overlay2/1d7726c110c78b9639456b619e775a9a6283c2e4b782e29707ce35d6a1be2fc1/diff:/var/lib/docker/overlay2/dca9d5248ef96cf462e83a033236927613e17887e6c4c76264bfc30854115007/diff:/var/lib/docker/overlay2/24dfabba05dec566eceeff77382c3f1aa9c5bb100d6551747c2a837defe7d593/diff:/var/lib/docker/overlay2/34508368e51433846378cd8513581d9ac17ba0cfa0b8952aba039b8e653b433d/diff",
+            "MergedDir": "/var/lib/docker/overlay2/b5770e68d747114583487c0b8e32dcd695a20fe902730de49d2b3ec99f336180/merged",
+            "UpperDir": "/var/lib/docker/overlay2/b5770e68d747114583487c0b8e32dcd695a20fe902730de49d2b3ec99f336180/diff",
+            "WorkDir": "/var/lib/docker/overlay2/b5770e68d747114583487c0b8e32dcd695a20fe902730de49d2b3ec99f336180/work"
+        },
+        "Name": "overlay2"
+    },
+    "HostConfig": {
+        "AutoRemove": false,
+        "Binds": null,
+        "BlkioDeviceReadBps": null,
+        "BlkioDeviceReadIOps": null,
+        "BlkioDeviceWriteBps": null,
+        "BlkioDeviceWriteIOps": null,
+        "BlkioWeight": 0,
+        "BlkioWeightDevice": null,
+        "CapAdd": null,
+        "CapDrop": null,
+        "Cgroup": "",
+        "CgroupParent": "",
+        "CgroupnsMode": "private",
+        "ConsoleSize": [
+            0,
+            0
+        ],
+        "ContainerIDFile": "",
+        "CpuCount": 0,
+        "CpuPercent": 0,
+        "CpuPeriod": 0,
+        "CpuQuota": 0,
+        "CpuRealtimePeriod": 0,
+        "CpuRealtimeRuntime": 0,
+        "CpuShares": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "DeviceCgroupRules": null,
+        "DeviceRequests": null,
+        "Devices": null,
+        "Dns": null,
+        "DnsOptions": null,
+        "DnsSearch": null,
+        "ExtraHosts": [],
+        "GroupAdd": null,
+        "IOMaximumBandwidth": 0,
+        "IOMaximumIOps": 0,
+        "IpcMode": "private",
+        "Isolation": "",
+        "Links": null,
+        "LogConfig": {
+            "Config": {},
+            "Type": "json-file"
+        },
+        "MaskedPaths": [
+            "/proc/asound",
+            "/proc/acpi",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/sys/firmware",
+            "/sys/devices/virtual/powercap"
+        ],
+        "Memory": 0,
+        "MemoryReservation": 0,
+        "MemorySwap": 0,
+        "MemorySwappiness": null,
+        "NanoCpus": 0,
+        "NetworkMode": "netology-nginx_default",
+        "OomKillDisable": null,
+        "OomScoreAdj": 0,
+        "PidMode": "",
+        "PidsLimit": null,
+        "PortBindings": {
+            "80/tcp": [
+                {
+                    "HostIp": "",
+                    "HostPort": "9090"
+                }
+            ]
+        },
+        "Privileged": false,
+        "PublishAllPorts": false,
+        "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+        ],
+        "ReadonlyRootfs": false,
+        "RestartPolicy": {
+            "MaximumRetryCount": 0,
+            "Name": "no"
+        },
+        "Runtime": "runc",
+        "SecurityOpt": null,
+        "ShmSize": 67108864,
+        "UTSMode": "",
+        "Ulimits": null,
+        "UsernsMode": "",
+        "VolumeDriver": "",
+        "VolumesFrom": null
+    },
+    "HostnamePath": "/var/lib/docker/containers/7d74136a5413a5b3c4dc8381491543b9dd9ef8ae86eda2bdaedc5a0c3b9482a5/hostname",
+    "HostsPath": "/var/lib/docker/containers/7d74136a5413a5b3c4dc8381491543b9dd9ef8ae86eda2bdaedc5a0c3b9482a5/hosts",
+    "Id": "7d74136a5413a5b3c4dc8381491543b9dd9ef8ae86eda2bdaedc5a0c3b9482a5",
+    "Image": "sha256:b22b73864dea923a1e5808a5b62c296b3b0f5488efd32b3b15ab556a180a144e",
+    "LogPath": "/var/lib/docker/containers/7d74136a5413a5b3c4dc8381491543b9dd9ef8ae86eda2bdaedc5a0c3b9482a5/7d74136a5413a5b3c4dc8381491543b9dd9ef8ae86eda2bdaedc5a0c3b9482a5-json.log",
+    "MountLabel": "",
+    "Mounts": [],
+    "Name": "/netology-nginx-nginx-1",
+    "NetworkSettings": {
+        "Bridge": "",
+        "EndpointID": "",
+        "Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "HairpinMode": false,
+        "IPAddress": "",
+        "IPPrefixLen": 0,
+        "IPv6Gateway": "",
+        "LinkLocalIPv6Address": "",
+        "LinkLocalIPv6PrefixLen": 0,
+        "MacAddress": "",
+        "Networks": {
+            "netology-nginx_default": {
+                "Aliases": [
+                    "netology-nginx-nginx-1",
+                    "nginx",
+                    "7d74136a5413"
+                ],
+                "DNSNames": [
+                    "netology-nginx-nginx-1",
+                    "nginx",
+                    "7d74136a5413"
+                ],
+                "DriverOpts": null,
+                "EndpointID": "4ca8930c41bb272b0788edaab73b1404bd6c4549fd958f5f82c32a90c6e198fd",
+                "Gateway": "172.19.0.1",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "IPAMConfig": null,
+                "IPAddress": "172.19.0.2",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "Links": null,
+                "MacAddress": "02:42:ac:13:00:02",
+                "NetworkID": "74d98d84353ff064aa040957562da8cb25a485dad8605dd64bacb04bd54a928a"
+            }
+        },
+        "Ports": {
+            "80/tcp": [
+                {
+                    "HostIp": "0.0.0.0",
+                    "HostPort": "9090"
+                },
+                {
+                    "HostIp": "::",
+                    "HostPort": "9090"
+                }
+            ]
+        },
+        "SandboxID": "1e8aa19333bbaf81699e96e1a2c183ca6150c619d186c3f28f1992fcd50a9d84",
+        "SandboxKey": "/var/run/docker/netns/1e8aa19333bb",
+        "SecondaryIPAddresses": null,
+        "SecondaryIPv6Addresses": null
+    },
+    "Path": "/docker-entrypoint.sh",
+    "Platform": "linux",
+    "Portainer": {
+        "ResourceControl": {
+            "Id": 1,
+            "ResourceId": "3_netology-nginx",
+            "SubResourceIds": [],
+            "Type": 6,
+            "UserAccesses": [],
+            "TeamAccesses": [],
+            "Public": false,
+            "AdministratorsOnly": true,
+            "System": false
+        }
+    },
+    "ProcessLabel": "",
+    "ResolvConfPath": "/var/lib/docker/containers/7d74136a5413a5b3c4dc8381491543b9dd9ef8ae86eda2bdaedc5a0c3b9482a5/resolv.conf",
+    "RestartCount": 0,
+    "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 14854,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2025-10-03T09:02:12.72045378Z",
+        "Status": "running"
+    }
+}
