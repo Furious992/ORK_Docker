@@ -23,6 +23,8 @@ Hey, Netology
 
 ## Решение 1 
 
+https://hub.docker.com/repository/docker/furious992/custom-nginx/general
+
 ![img](https://github.com/Furious992/ORK_Docker/blob/main/1.png)
 ![img](https://github.com/Furious992/ORK_Docker/blob/main/2.png)
 ![img](https://github.com/Furious992/ORK_Docker/blob/main/3.png)
